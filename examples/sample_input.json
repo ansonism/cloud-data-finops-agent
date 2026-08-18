@@ -1,0 +1,17 @@
+{
+  "case_id": "demo-001",
+  "title": "Starter demo for Cloud Data FinOps Agent",
+  "description": "Analyze usage, billing, workload and performance telemetry to identify cost anomalies and optimization opportunities while preserving workload SLOs and avoiding unsafe automated downsizing.",
+  "constraints": [
+    "Use mock provider",
+    "No external credentials",
+    "Dry-run only"
+  ],
+  "evidence": [
+    {
+      "id": "ev-1",
+      "type": "user_supplied",
+      "summary": "Example evidence placeholder"
+    }
+  ]
+}

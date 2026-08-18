@@ -1,0 +1,41 @@
+{
+  "app": {
+    "name": "cloud-data-finops-agent",
+    "environment": "local"
+  },
+  "provider": {
+    "name": "mock",
+    "model": "mock-v1",
+    "timeout_seconds": 30,
+    "max_retries": 2
+  },
+  "workflow": {
+    "stages": [
+      "ingest_and_normalize_cost_usage",
+      "establish_baselines",
+      "detect_anomalies_and_cost_drivers",
+      "identify_optimization_opportunities",
+      "estimate_savings_and_risk",
+      "validate_against_slos_and_constraints",
+      "rank_recommendations",
+      "produce_finops_action_plan"
+    ],
+    "checkpoint_each_stage": true,
+    "state_directory": "out/state"
+  },
+  "risk": {
+    "default_approval_threshold": "HIGH"
+  },
+  "approval": {
+    "mode": "manual",
+    "required_for_mutations": true
+  },
+  "observability": {
+    "log_level": "INFO",
+    "structured": true
+  },
+  "tools": {
+    "mode": "fake",
+    "allow_mutations": false
+  }
+}
